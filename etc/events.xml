@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Event/etc/events.xsd">
+    <event name="sales_order_invoice_register">
+        <observer name="sunmedia_adminusernameorder_observer_addcommentonaction" instance="Sunmedia\AdminUsernameOrder\Observer\Addcommentonaction" />
+    </event>
+    <event name="order_cancel_after">
+        <observer name="sunmedia_adminusernameorder_observer_addcommentoncancelaction" instance="Sunmedia\AdminUsernameOrder\Observer\Addcommentoncancelaction" />
+    </event>
+    <event name="sales_order_shipment_save_after">
+        <observer name="sunmedia_adminusernameorder_observer_addcommentonshipmentaction" instance="Sunmedia\AdminUsernameOrder\Observer\Addcommentonshipmentaction" />
+    </event>
+</config>
