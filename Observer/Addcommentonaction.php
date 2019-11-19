@@ -8,7 +8,6 @@ class Addcommentonaction implements \Magento\Framework\Event\ObserverInterface
     {
 
         $order = $observer->getData('order');
-        //$order->;
         $authsession = \Magento\Framework\App\ObjectManager::getInstance()->create(\Magento\Backend\Model\Auth\Session::class);
         $username = $authsession->getUser()->getUsername();
 

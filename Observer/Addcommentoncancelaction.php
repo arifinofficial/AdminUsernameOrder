@@ -8,7 +8,6 @@ class Addcommentoncancelaction implements \Magento\Framework\Event\ObserverInter
     {
 
         $order = $observer->getData('order');
-        //$order->doSomething();
         $authsession = \Magento\Framework\App\ObjectManager::getInstance()->create(\Magento\Backend\Model\Auth\Session::class);
         $username = $authsession->getUser()->getUsername();
 
